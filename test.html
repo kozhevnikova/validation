@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Валидация</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="validation.js"></script>
+    </head>
+    <body>
+        <form id="form">
+            <input type="text" id="input_text" autofocus required placeholder="Enter your full name">
+            <div><span id="status_invalid"></span></div>
+            <div id="output_name">
+                <div><span>Last Name:</span><span id="lastname"></span></div>
+                <div><span>Name:</span><span id="firstname"></span></div>
+                <div><span>Patronymic:</span><span id="patronymic"></span></div>
+                <button id="dialog_button" type="button"><span>Sumbit</span></button>
+            </div>
+        </form>
+        <div id="modal_form">
+            <button id="modal_form_close">X</button>
+            <div id="modal_form_content"></div>
+        </div>
+        <div id="overlay"></div>
+    </body>
+</html>
